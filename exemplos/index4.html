@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> Quarto script</title>
+    </head>
+    <body>
+        primeiro_componente: <input type = "number" name = " primeiro_componente" id = "primeiro_componente"><br>
+        segundo_componente: <input type = "number" name = " segundo_componente" id = "segundo_componente"><br>
+        <button onclick="funcao_soma(document.getElementById('primeiro_componente').value, document.getElementById('segundo_componente').value)">resultado</button>
+
+        <script>
+            function funcao_soma(valor1, valor2){
+                var soma = parseInt(valor1) + parseInt(valor2)
+                window.alert(soma)
+            }
+
+        </script>
+    </body>
+</html>
