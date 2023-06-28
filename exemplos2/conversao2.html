@@ -1,0 +1,28 @@
+<html>
+
+    <head >
+        <meta charset="utf-8">
+        <title>
+            Conversor de fahrenheint para celsius
+        </title>
+
+        
+
+    </head>
+        <body>
+            <input type = "number" name = "a" id = "a"> </br>
+
+            <button onclick = "temperatura(document.getElementById('a').value)"> Calcular</button>
+            
+            <script>
+            function temperatura(temp){
+                let cel = (temp - 32)*5/9
+                window.alert(`${temp}F é ${(cel).toFixed(2)}C`)
+            }                    
+           
+                
+
+        </script>
+
+        </body>
+</html>
