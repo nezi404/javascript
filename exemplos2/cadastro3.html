@@ -1,0 +1,45 @@
+<html>
+
+    <head >
+        <meta charset="utf-8">
+        <title>
+            Cadastro
+        </title>
+
+        <script>
+            alert("Bem vindo ao site de teste. Faça seu login")
+
+            var nome = prompt("Informe seu nome: ")
+            var email = prompt("Informe seu email: ")
+            var login = prompt("Informe seu login: ")
+            var senha = prompt("Informe sua senha: ")
+            var senha2 = prompt("Informe sua senha novamente: ")
+            
+            if (senha == senha2)
+                window.alert(`Login válido!\nOlá ${nome}, seu login é ${login} e sua senha é ${senha}`)
+
+            
+            while(senha != senha2){
+                    alert("Login inválido")
+                    var senha = null
+                    var senha2 = null
+                    var senha = prompt("Informe sua senha: ")
+                    var senha2 = prompt("Informe sua senha novamente: ")
+                
+
+                if (senha == senha2)
+                    window.alert(`Login válido!\nOlá ${nome}, seu login é ${login} e sua senha é ${senha}`)
+            }
+
+            
+
+
+
+
+        </script>
+
+    </head>
+        <body>
+            <h1>Login</h1>
+        </body>
+</html>
