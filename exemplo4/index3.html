@@ -1,0 +1,32 @@
+<DOCTYPE! html>
+<html lang="pt-br">
+    <head>
+        <meta charset = "utf-8">
+        <title> Média de aluno</title>
+    </head>
+
+    <body>
+
+        <div id="cont">
+            <button onclick="calcular()"> Calcular</button>
+            <h1 id="res"></h1>
+        </div>
+
+        <script language = "JavaScript" >
+            function calcular(){
+                var obj=document.getElementById("cont");
+                var nome = window.prompt("Qual o nome do aluno?: ")
+                var n1 = Number(window.prompt("Insira a nota 1: "));
+                var n2 = Number(window.prompt("Insira a nota 2: "));
+                var med = (n1 + n2)/2;
+
+                //var obj2 = document.getElementById("res").innerHTML = "A nota 1 é "+ n1 + " e a nota 2 é " + n2; 
+                //var obj2 = document.getElementById("res").innerHTML += "A média das notas do aluno " + nome +  " é " + med;
+
+                obj.innerHTML = `<p>A média das notas do aluno <mark>${nome}</mark> é ${med}</p>`;
+                
+                //console.log(res)
+            }
+        </script>
+    </body>
+</html>
