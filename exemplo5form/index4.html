@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <header>
+        <meta charset="utf-8">
+    </header>
+    <head>
+        <title>Testando o radio</title>
+        <link rel="stylesheet" href="mystylesheet0.css">
+    </head>
+    <body>
+        <h1>Pick your season!!!</h1><br\>
+        <p>Choose your favourite season of the year: </p>
+        <input type="radio" id="verao" value="verao">Verão<br\>
+        <input type="radio" id="inverno" value="inverno">Inverno<br\>
+        <input type="radio" id="primavera" value="primavera">Primavera<br\>
+        <input type="radio" id="autono" value="autono">Autono<br\>
+
+        <button type="button" onclick="checkbutton()">Submit</button>
+        <h3 id="disc">A word</h3>
+        <h3 id="error">Other word</h3>
+    </body>
+    <script scr="checkbutton.js">
+        function checkbutton(){
+            if (document.getElementById("verao").checked){
+                document.getElementById("disc").innerHTML+="Summer was picked as your favourite season!!!"
+                document.getElementById("disc").innerHTML+=document.getElementById("verao").value + "verao button is checked"
+            }
+
+            else if (document.getElementById("inverno").checked){
+                document.getElementById("disc").innerHTML+="Winter was picked as your favourite season!!!"
+                document.getElementById("disc").innerHTML+=document.getElementById("inverno").value + "inverno button is checked"
+            }
+
+            else if (document.getElementById("primavera").checked){
+                document.getElementById("disc").innerHTML+="Spring was picked as your favourite season!!!"
+                document.getElementById("disc").innerHTML+=document.getElementById("primavera").value + "primavera button is checked"
+            }
+
+            else if (document.getElementById("autono").checked){
+                document.getElementById("disc").innerHTML+="Fall was picked as your favourite season!!!"
+                document.getElementById("disc").innerHTML+=document.getElementById("autono").value + "autono button is checked"
+            }
+
+            else{
+                document.getElementById("error").innerHTML="None was picked!!! Try again"
+            }
+}
+    </script>
+
+</html>
