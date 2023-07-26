@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <h2>Escolha um carro!!!</h2>
+        <p>O elemento escohido irá aparecer em uma janela</p>
+
+        
+            <label for="car">Escolha o carro:</label>
+            <select id="car" name="car" size="2">
+                <option id="volvo" value="volvo">Volvo</option>
+                <option id="saab" value="saab">Saab</option>
+                <option id="fiat" value="fiat">Fiat</option>
+                <option id="audi" value="audi" >Audi</option>
+                <option id="volksvagem" value="volksvagem">Volksvagem</option>
+            </select>
+            <button id="botao" value="botao" onclick="mostrar_opcao()">MOSTRAR</button>
+            <br>
+
+        
+        <script>
+            function mostrar_opcao(){
+                let carro_escolhido = document.getElementById("car").value;
+                window.alert(`A opção escolhida foi ${carro_escolhido}`)
+            }
+
+        </script>
+    </body>
+</html>

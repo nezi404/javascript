@@ -1,0 +1,51 @@
+<html>
+<header>
+    <meta charset="utf-8">
+</header>
+
+<head>
+    <title>Perfil pessoal</title>
+</head>
+
+<body>
+
+    <label for="pessoa">Selecione as opções correspondentes abaixo:</label>
+    <select id="sexo" name="sexo" size="1">
+        <option value="femininno">Feminino</option>
+        <option value="masculino">Masculino</option>
+        <option value="outro">Outro</option>
+    </select>
+
+    <select id="estadocivil" name="estadocivil" size="1">
+        <option value="solteiro">Solteiro</option>
+        <option value="Casado">Casado</option>
+        <option value="Enrolado">Enrolado</option>
+    </select>
+
+    <select id="idade" name="idade" size="1">
+        <option value="0 a 10">0 à 10</option>
+        <option value="11 a 25">11 à 25</option>
+        <option value="26 a 35">26 à 35</option>
+        <option value="36 a 55">36 à 55</option>
+        <option value="56 em diante">56 em diante</option>
+    </select>
+
+    <select id="hobby" name="hobby" size="3">
+        <option value="livros">Livros</option>
+        <option value="música">Música</option>
+        <option value="cinema">Cinema</option>
+        <option value="esportes">Esportes</option>
+        <option value="games">games</option>
+    </select>
+    <br>
+    <input type="text" id="nome" name="nome" placeholder="Insira seu nome aqui">
+    <button type ="button" mostrar" onclick="mostrar()">Mostrar informações</button>
+    <br>
+    <script language="javascript">
+        function mostrar() {
+            window.alert("Olá seu nome é " + document.getElementById("nome").value + " seu sexo é " + document.getElementById("sexo").value + " e seu estado civil atual é " + document.getElementById("estadocivil").value + ". Sua idade é entre " + document.getElementById("idade").value + " e seu hobby favorito é " + document.getElementById("hobby").value)
+        }
+    </script>
+</body>
+
+</html>
