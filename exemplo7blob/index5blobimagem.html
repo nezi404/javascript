@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8">
+    </header>
+    <head>
+        <title>Read text IMAGE file tutorial</title>
+    </head>
+    <body>
+        <input type="file" accept="image/*" onchange = "openFile(event)">
+        <br>
+        <img id="output">
+        <script>
+            var openFile = function(event){
+                var input = event.target;
+
+                var reader = new FileReader();
+                reader.onload = function(){
+                    var dataURL = reader.result;
+                    var output = document.getElementById("output");
+                    output.src = dataURL;
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            };
+        </script>
+    </body>
+</html>

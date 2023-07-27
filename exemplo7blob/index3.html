@@ -1,0 +1,18 @@
+<html>
+    <header>
+        <meta charset="utf-8">
+    </header>
+    <head>
+        <title>Read text file tutorial</title>
+    </head>
+    <body>
+        <script>
+            let link = document.createElement('a');
+            link.download = 'test.txt';
+            let blob = new Blob(["Bem vindo à aula de JS"], {type:'text/plain'});
+            link.href = URL.createObjectURL(blob);
+            link.click();
+            URL.revokeObjectURL(link.href);
+        </script>
+    </body>
+</html>

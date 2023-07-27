@@ -1,0 +1,50 @@
+<html>
+    <header>
+        <meta charset="utf-8">
+    </header>
+    <head>
+        <title>Read text file tutorial</title>
+    </head>
+    <body>
+       <table>
+        
+        <td>Texto para salvar: </td>
+
+        <tr>
+            <td colspan="3">
+                <textarea id="inputTextToSave" cols="80" rows ="25"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Arquivo para salvar como:   </td>
+            <td><input id="inputFileNameToSaveAs"></input></td>
+            <td><button onclick="saveTextAsFile()">Salvar texto para Arquivo</button></td>
+        </tr>
+       </table>
+       <script type="text/javascript">
+        function saveTextAsFile(){
+            var textToSave = document.getElementById("inputTextToSave").value;
+            var textToSaveAsBlob = new Blob([textToSave], {type: "text/plain"});
+            var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+            var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
+
+            var downloadLink= document.createElement("a");
+            downloadLink.download = fileNameToSaveAs;
+            downloadLink.innerHTML = "Download file";
+            downloadLink.href = textToSaveAsURL;
+            downloadLink.onclick = destroyClickedElement;
+            downloadLink.style.display = "nome";
+            document.body.appendChild(downloadLink);
+
+            downloadLink.click();
+
+        }
+
+        function destroyClickedElement(event){
+            document.body.removeChild(event.target);
+
+        }
+       </script>
+    </body>
+</html>
