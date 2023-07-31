@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8">
+    </header>
+    <head>
+        <title>Cadatro de equipamentos</title>
+    </head>
+    <body>
+        <section id="entrada" action="#" >
+            <form oninput="idadeBar.innerHTML=idade.value + ' anos' + '<br>'">
+                <label for="nomeDoEquipamento">Insira o nome do equipamento: </label>
+                <input type="text" id="nomeDoEquipamento" name="nomeDoEquipamento" placeholder="Insira o nome do equipamento">
+                <br><br>
+                <input type="range" id="idade" name="idade" value="20">
+                <br><br>
+                <label for="imagemDoEquipamento">Insira uma imagem do equipamento<br><br></label>
+                <input type="file" value="imagemDoEquipamento" accept="image/*" onchange = "openFile(event)">
+            </form>
+        </section>
+
+        <br>
+        <output id="idadeBar" name="idadeBar" for="idade"></output>
+        <input type="submit" value="Enviar">
+
+        <script language="javascrit" scr="script.js"></script>
+    </body>
+</html>
