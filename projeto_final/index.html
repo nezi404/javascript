@@ -1,28 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        <meta charset="utf-8">
-    </header>
-    <head>
-        <title>Cadatro de equipamentos</title>
+<header>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="front_end/mystylesheet.css">
     </head>
-    <body>
-        <section id="entrada" action="#" >
-            <form oninput="idadeBar.innerHTML=idade.value + ' anos' + '<br>'">
-                <label for="nomeDoEquipamento">Insira o nome do equipamento: </label>
-                <input type="text" id="nomeDoEquipamento" name="nomeDoEquipamento" placeholder="Insira o nome do equipamento">
-                <br><br>
-                <input type="range" id="idade" name="idade" value="20">
-                <br><br>
-                <label for="imagemDoEquipamento">Insira uma imagem do equipamento<br><br></label>
-                <input type="file" value="imagemDoEquipamento" accept="image/*" onchange = "openFile(event)">
-            </form>
-        </section>
+</header>
 
+<head>
+    <title>Cadastro de equipamentos</title>
+</head>
+
+<body>
+    <div id="pessoa">
+
+        <form>
+            <label for="nomeDaPessoa">Insira o nome da pessoa: </label>
+            <input type="text" id="nomeDaPessoa" name="nomeDaPessoa" placeholder="Insira o nome">
+        </form>
+        <form oninput="idadeBar.innerHTML=idade.value + ' anos' + '<br>'">
+            <label for="idade">Escolha a idade</label>
+            <input type="range" id="idade" name="idade" value="20">
+            <output id="idadeBar" name="idadeBar" for="idade">anos</output>
+        </form>
+        <form>
+            <label for="imagemDoEquipamento">Insira uma imagem do equipamento</label>
+            <input type="file" value="imagemDoEquipamento" accept="image/*" onchange="openFile(event)">
+            <img id="output">
+        </form>
+    </div>
+    <div id="modelos">
+        <form>
+            <label for="modelo">Escolha o equipamento :</label>
+            <select id="modelo" name="modelo" size="1">
+                <option value="chave de fenda">chave de fenda</option>
+                <option value="trena">trena</option>
+                <option value="alicate">alicate</option>
+                <option value="lanterna">lanterna</option>
+                <option value="martelo">martelo</option>
+            </select>
+
+            <label for="marca">Escolha a marca</label>
+
+            <select id="marca" name="marca" size="1">
+                <option value="philip">philip</option>
+                <option value="steel">steel</option>
+                <option value="vonder">vonder</option>
+            </select>
+        </form>
+        <textarea id="descricaoDoEquipamento" cols="80" rows="25"></textarea>
         <br>
-        <output id="idadeBar" name="idadeBar" for="idade"></output>
-        <input type="submit" value="Enviar">
+            <label for="dataParaDevolucao">Insira a data</label>
+            <input type="text" id="dataParaDevolucao" placeholder="Insira a data pra devolver">
+    </div>
 
-        <script language="javascrit" scr="script.js"></script>
-    </body>
+    <div id="botoes">
+        <input type="file" id="arquivoPraLeitura">
+        <button id="ler" onclick="lerArquivoTexto()">ler</button>
+            <br>
+        <input type="text" id="nomeDoArquivo" name="nomeDoArquivo" placeholder="Insira o nome do arquivo">
+        <button id="salvar" onclick="salvarTexto()">salva</button>
+    </div>
+
+    <script src="back_end/script.js" language="javascript">
+
+    </script>
+</body>
+
 </html>
