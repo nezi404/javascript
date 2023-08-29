@@ -1,0 +1,200 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="mystylesheet.css">
+    </head>
+    <body>
+        <div>
+            <p id="q1">Use essa linha pra questao 1</p>
+            <button onclick="printar(document.getElementById('q1'))">questao 1</button>
+        </div>
+
+        <div>
+            <p>Retorna cubo</p>
+            <input id="i2" type="number" placeholder="Insira o numero">
+            <p id="q2">Use essa linha pra questao 2</p>
+            <button onclick="cubo(document.getElementById('q2'))">questao 2</button>
+        </div>
+     
+        <div>
+            <p>Fahrenheit (F) para Celsius (C)</p>
+            <input id="i3" type="number" placeholder="Insira em farenheit">
+            <p id="q3">Use essa linha pra questao 3</p>
+            <button onclick="celsius(document.getElementById('q3'))">questao 3</button>
+        </div>
+      
+        <div>
+            <p>Área de um triângulo</p>
+            <input id="i4_h" type="number" placeholder="Insira a altura">
+            <input id="i4_b" type="number" placeholder="Insira a base">
+            <p id="q4">Use essa linha pra questao 4</p>
+            <button onclick="area(document.getElementById('q4'))">questao 4</button>
+        </div>
+        
+        <div>
+            <p>Área e o perímetro de um círculo</p>
+            <input id="i5" type="number" placeholder="Insira o raio">
+            <p id="q5">Use essa linha pra questao 5</p>
+            <button onclick="circulo(document.getElementById('q5'))">questao 5</button>
+        </div>
+
+        <div>
+            <p>Inverte numero</p>
+            <input id="i6" type="number" placeholder="Insira o numero para ser invertido">
+            <p id="q6">Use essa linha pra questao 6</p>
+            <button onclick="reverte(document.getElementById('q6'))">questao 6</button>
+        </div>
+      
+        <div>
+            <p>Contador de vogal</p>
+            <input id="i7" type="text" placeholder="Insira uma frase">
+            <p id="q7">Use essa linha pra questao 7</p>
+            <button onclick="conta_vogal(document.getElementById('q7'))">questao 7</button>
+        </div>
+       
+        <div>
+            <p>Retorno de investimento</p>
+            <input id="i8_cap" type="number" placeholder="Insira o capital">
+            <input id="i8_tax" type="number" placeholder="Insira as taxas em percentual">
+            <input id="i8_mes" type="number" placeholder="Insira o tempo em meses">
+            <p id="q8">Use essa linha pra questao 8</p>
+            <button onclick="montante(document.getElementById('q8'))">questao 8</button>
+        </div>
+
+        <div>
+            <p>Acha fatorial</p>
+            <input id="i9" type="number" placeholder="Insira um numero">
+            <p id="q9">Use essa linha para questao 9</p>
+            <button onclick="fatorial(document.getElementById('q9'))">questao 9</button>
+        </div>
+        
+        <div>
+            <p>Contador de caractere</p>
+            <input id="i10_str" type="text" placeholder="Insira uma frase">
+            <input id="i10_char" type="text" placeholder="Insira um caractere">
+            <p id="q10">Use essa linha para questao 10</p>
+            <button onclick="conta_caractere(document.getElementById('q10'))">questao 10</button>
+        </div>
+
+        <div>
+            <p>Verificar numero</p>
+            <input id="i11" type="number" placeholder="Insira uma numero">
+            <p id="q11">Use essa linha para questao 11</p>
+            <button onclick="eh_primo(document.getElementById('q11'), 'i11')">questao 11</button>
+        </div>
+
+        <div>
+            <p>Soma dos numero do array</p>
+            <input id="i12" type="text" placeholder="Insira uma lista de numeros separados por vírgula">
+            <p id="q12">Use essa linha para questao 12</p>
+            <button onclick="soma_elem_arr(document.getElementById('q12'))">questao 12</button>
+        </div>
+
+        <div>
+            <p>Média dos números do array</p>
+            <input id="i13" type="text" placeholder="Insira uma lista de numeros separados por vírgula">
+            <p id="q13">Use essa linha para questao 13</p>
+            <button onclick="media_elem_arr(document.getElementById('q13'))">questao 13</button>
+        </div>
+
+        <div>
+            <p>Retorna os números positivos</p>
+            <input id="i14" type="text" placeholder="Insira uma lista de numeros separados por vírgula">
+            <p id="q14">Use essa linha para questao 14</p>
+            <button onclick="posi_elem_arr(document.getElementById('q14'))">questao 14</button>
+        </div>
+
+        <div>
+            <p>Maior valor do array</p>
+            <input id="i15" type="text" placeholder="Insira uma lista de numeros separados por vírgula">
+            <p id="q15">Use essa linha para questao 15</p>
+            <button onclick="maior_elem_arr(document.getElementById('q15'))">questao 15</button>
+        </div>
+
+        <div>
+            <p>Soma de digitos</p>
+            <input id="i16" type="text" placeholder="Insira um numero">
+            <p id="q16">Use essa linha para questao 16</p>
+            <button onclick="soma_dos_digitos(document.getElementById('q16'))">questao 16</button>
+        </div>
+
+        <div>
+            <p>Imprimir os 10 primeiros números da sequência de Fibonacci</p>
+            <p id="q17">Use essa linha para questao 17</p>
+            <button onclick="print_fibonacci(document.getElementById('q17'))">questao 17</button>
+        </div>
+
+        <div>
+            <p>Verifica numero e retorna bool</p>
+            <input id="i18" type="number" placeholder="Insira um numero">
+            <p id="q18">Use essa linha para questao 18</p>
+            <button onclick="bool_primo(document.getElementById('q18'), 'i18')">questao 18</button>
+        </div>
+
+        <div>
+            <p>Retornar a maior string de um array</p>
+            <textarea id="i19" type="text" cols=80  placeholder="Insira uma lista de frases separados por barra (/)"></textarea>
+            <p id="q19">Use essa linha para questao 19</p>
+            <button onclick="maior_string(document.getElementById('q19'))">questao 19</button>
+        </div>
+
+        <div>
+            <p>Concatena arrays</p>
+            <textarea id="i20_1" type="text" cols=80 placeholder="Insira informações separadas por barra (/)"></textarea>
+            <textarea id="i20_2" type="text" cols=80 placeholder="Insira informações separadas por barra (/)"></textarea>
+            <p id="q20">Use essa linha para questao 20</p>
+            <button onclick="junta_array(document.getElementById('q20'))">questao 20</button>
+        </div>
+
+        <div>
+            <p>Contar a quantidade de palavras em um texto</p>
+            <textarea id="i21" type="text" cols=80 placeholder="Insira frase"></textarea>
+            <p id="q21">Use essa linha para questao 21</p>
+            <button onclick="conta_palavras(document.getElementById('q21'), 'i21')">questao 21</button>
+        </div>
+
+        <div>
+            <p>Criar uma função para inverter um array</p>
+            <textarea id="i22" type="text" cols=80 placeholder="Insira frase"></textarea>
+            <p id="q22">Use essa linha para questao 22</p>
+            <button onclick="reverte_arr(document.getElementById('q22'), 'i22')">questao 22</button>
+        </div>
+
+        <div>
+            <p>Mostra endereço</p>
+            <p id="q23">Use essa linha para questao 23</p>
+            <button onclick="mostra_end(document.getElementById('q23'))">questao 23</button>
+        </div>
+
+        <div>
+            <p>Mostra pares em intervalo</p>
+            <input id="i24_1" type="number" placeholder="Insira um numero">
+            <input id="i24_2" type="number" placeholder="Insira um numero">
+            <p id="q24">Use essa linha para questao 24</p>
+            <button onclick="mostra_par('i24_1', 'i24_2', 'q24')">questao 24</button>
+        </div>
+
+        <div>
+            <p>Verifica habilidade</p>
+            <textarea id="i25" type="text" cols=80 placeholder="Insira as habilidades, use virgulas para separar(,)"></textarea>
+            <p id="q25">Use essa linha para questao 25</p>
+            <button onclick="mostrar_TemHabilidade('i25', 'q25')">questao 25</button>
+        </div>
+
+        <div>
+            <p>Mostra experiencia</p>
+            <input id="i26" type="number" placeholder="Insira os anos de experiencia">
+            <p id="q26">Use essa linha para questao 26</p>
+            <button onclick="experiencia('i26', 'q26')">questao 26</button>
+        </div>
+
+        <div>
+            <p>Mostra usuarios</p>
+            <p id="q27_1">Use essa linha para questao 27</p>
+            <p id="q27_2">Use essa linha para questao 27</p>
+            <button onclick="mostrar_perfil()">questao 27</button>
+        </div>
+
+    </body>
+    <script src="questoes.js"></script>
+</html>
